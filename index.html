@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Consultant</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="icon" href="devchallenges.png" type="x-icon/image">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html" id="logo">THIS INTERIOR</a>
+    <nav class="navbar" id="navbar">
+      <p><a href="./index.html">Home</a></p>
+      <p><a href="">Collection</a></p>
+      <p><a href="">About</a></p>
+      <p><a href="">Contact</a></p>
+    </nav>
+    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+      <span class="material-icons md-36">menu</span>
+      <span class="material-icons md-36" id="close-icon">close</span>
+    </a>
+  </header>
+
+  <main id="hero">
+    <div id="hero-text">
+      <h1 id="heading">Modern interior</h1>
+      <p id="subheading">A full-Service residential & commercial interior design and staging company offering
+        professional organizing & eco-services.</p>
+      <a href="" id="read-more" style="display:flex; align-items:center;">Read more &nbsp;&nbsp;
+        <span class="material-icons" style="font-size:30px;">trending_flat</span>
+      </a>
+    </div>
+    <div>
+      <img src="photo1.png" alt="home-decor" title="Interior Home Decoration" id="hero-img">
+      <div id="credit-container">
+        <img src="photo2.png" alt="person-img" id="person-img">
+        <p id="person-name">Aliza Webber</p>
+        <p id="person-designation">Interior designer</p>
+        <p id="credit-info">Designed in 2020 by Aliza Webber</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>created by <a href="https://github.com/rafaepy" target="_blank">Rafae Dhopawakar</a></p>
+  </footer>
+
+  <script>
+    function hamburgerMenu() {
+    let menu = document.getElementById("navbar");  
+    let x = document.getElementById("close-icon");
+    if (menu.className === "navbar") {
+      menu.className += " responsive";
+      x.style.display = "block";
+    }
+    else {
+      menu.className = "navbar";
+      x.style.display = "none";
+    }
+  }
+  </script>
+</body>
+
+</html>
